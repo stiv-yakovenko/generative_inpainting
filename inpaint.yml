@@ -1,5 +1,5 @@
 # parameters
-DATASET: 'celebahq'  # 'tmnist', 'dtd', 'places2', 'celeba', 'imagenet', 'cityscapes'
+DATASET: 'roof_noholes'  # 'tmnist', 'dtd', 'places2', 'celeba', 'imagenet', 'cityscapes'
 RANDOM_CROP: False
 VAL: False
 LOG_DIR: full_model_celeba_hq_256
@@ -30,6 +30,10 @@ VAL_PSTEPS: 1000
 
 # data
 DATA_FLIST:
+  roof_noholes: [
+    'data_flist/train_shuffled.flist',
+    'data_flist/validation_shuffled.flist'
+  ]
   # https://github.com/JiahuiYu/progressive_growing_of_gans_tf
   celebahq: [
     'data/celeba_hq/train_shuffled.flist',
